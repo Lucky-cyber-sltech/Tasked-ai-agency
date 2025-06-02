@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { Toaster } from 'react-hot-toast';
 import Header from './components/Header';
 import Benefits from './components/Benefits';
 import Testimonials from './components/Testimonials';
@@ -10,6 +11,7 @@ import AccessForm from './components/AccessForm';
 function App() {
   return (
     <div className="min-h-screen bg-black text-white">
+      <Toaster position="top-center" />
       <Header />
       <Benefits />
       <Testimonials />
